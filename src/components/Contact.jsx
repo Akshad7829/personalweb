@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="contact-details-wrapper">
           <div className="home-hello-wrapper ">
             <div className="hello-line"></div>
-            <h3 className="hero-hello">Contact me</h3>
+            <h3 className="hero-hello">Contact </h3>
           </div>
           <h2 className="slogan">Let's do it together</h2>
 
@@ -45,11 +45,11 @@ export default function Contact() {
                       <FaMapMarkerAlt />
                     </IconContext.Provider>
                   </div>
-                  Kigali - Rwanda
+                  Ganraj, Ganesh Nagar, Kavalapur,Sangli-416306 
                 </a>
               </li>
               <li>
-                <a href="#f">
+                <a href="mailto:akshadns03@gmail.com">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
                       value={{ className: "contact-address-icon" }}
@@ -57,7 +57,7 @@ export default function Contact() {
                       <BsEnvelope />
                     </IconContext.Provider>
                   </div>
-                  barackmukelenga100@gmail.com
+                  akshadsn03@gmail.com
                 </a>
               </li>
               <li>
@@ -69,7 +69,7 @@ export default function Contact() {
                       <FiPhone />
                     </IconContext.Provider>
                   </div>
-                  +250 (0) 780-083-122
+            +91-9405586649
                 </a>
               </li>
             </ul>
@@ -184,11 +184,11 @@ export default function Contact() {
                       <FaMapMarkerAlt />
                     </IconContext.Provider>
                   </div>
-                  Kigali - Rwanda
+                  Ganraj, Ganesh Nagar, Kavalapur, Sangli-416306
                 </a>
               </li>
               <li data-aos="fade-down-right">
-                <a href="#f">
+                <a href="mailto:akshadsn03@gmail.com">
                   <div className="address-icon-wrapper">
                     <IconContext.Provider
                       value={{ className: "contact-address-icon" }}
@@ -196,7 +196,7 @@ export default function Contact() {
                       <BsEnvelope />
                     </IconContext.Provider>
                   </div>
-                  barackmukelenga100@gmail.com
+                 akshadsn03@gmail.com
                 </a>
               </li>
               <li data-aos="fade-down-right">
@@ -208,12 +208,12 @@ export default function Contact() {
                       <FiPhone />
                     </IconContext.Provider>
                   </div>
-                  +250 (0) 780-083-122
+                  +91-9405586649
                 </a>
               </li>
             </ul>
           </div>
-          <div className="contact-links-wrapper">
+          {/* <div className="contact-links-wrapper">
             <ul>
               <li data-aos="fade-right">
                 <a
@@ -270,10 +270,10 @@ export default function Contact() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
-
-        <div className="contact-form-wrapper" data-aos="fade-left">
+    
+        {/* <div className="contact-form-wrapper" data-aos="fade-left">
           <form onSubmit={handleSubmit}>
             <Input placeholder="Name" name="name" errors={state.errors} />
             <Input
@@ -289,8 +289,20 @@ export default function Contact() {
             />
             <SubmitBtn message="Send" />
           </form>
-        </div>
+        </div> */}
       </div>
+      {/* <div className='btn-wrapper about' data-aos='fade-up'>
+            <Link
+              to='portfolio'
+              spy={true}
+              smooth={true}
+              duration={500}
+              className='hire-me-btn'
+            >
+              My portfolio
+            </Link>
+            
+          </div> */}
     </div>
   );
 }

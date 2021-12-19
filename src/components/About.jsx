@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { IconContext } from 'react-icons';
 import { BiDownload } from 'react-icons/bi';
 import { BsCheckCircle } from 'react-icons/bs';
-import project from '../assets/images/project1.png';
+import photo from '../assets/images/Photo.jpeg';
 import resume from '../assets/Barack Mukelenga Resume.pdf';
 import { Link } from 'react-scroll';
 
@@ -16,15 +16,26 @@ export default class About extends Component {
             <h3 className='hero-hello'>About me</h3>
           </div>
           <h2 className='slogan' data-aos='fade-up'>
-            Hi, Here I am
-            <br /> To help your next project
+            Hi,
+            {/* <br /> To help your next project */}
           </h2>
 
           <p className='about-work' data-aos='fade-up'>
-            I'm Baraka Mukelenga a software developer specialized in different
-            technologies ,Building web applications, Mobile apps and beautiful
-            websites for companies. Love digging into hard problems, learning
-            new languages and technologies.
+          I am Akshad Swaroop Nayakwadi, Currently pursuing Information Technology B.Tech degree in Government College Of Engineeering Karad, India
+
+
+          </p>
+          <p className='about-work' data-aos='fade-up'>
+        
+
+Iam trying to seek an entry-Level position to begin my Carrer in high-level Professional environment.
+
+
+          </p>
+          <p className='about-work' data-aos='fade-up'>
+   
+
+I have gained experience in Front-End Web development. Please feel free to contact. Cheers !!
           </p>
           <h3 className='languages-title' data-aos='fade-up'>
             Languages and <span>Frameworks</span>
@@ -36,7 +47,7 @@ export default class About extends Component {
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
-              <h3>Ruby</h3>
+              <h3>C++</h3>
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
@@ -46,21 +57,13 @@ export default class About extends Component {
               </div>
               <h3>Javascript</h3>
             </div>
-            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
-              <div className='check-icon'>
-                <IconContext.Provider value={{ className: 'check-list-icon' }}>
-                  <BsCheckCircle />
-                </IconContext.Provider>
-              </div>
-              <h3>Ruby on Rails</h3>
-            </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
                 <IconContext.Provider value={{ className: 'check-list-icon' }}>
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
-              <h3>NodeJS</h3>
+              <h3>Java</h3>
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-right'>
               <div className='check-icon'>
@@ -68,7 +71,7 @@ export default class About extends Component {
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
-              <h3>ReactJS</h3>
+              <h3>MySQL</h3>
             </div>
             <div className='work-about-item-wrapper' data-aos='fade-up-left'>
               <div className='check-icon'>
@@ -76,30 +79,138 @@ export default class About extends Component {
                   <BsCheckCircle />
                 </IconContext.Provider>
               </div>
-              <h3>React Native</h3>
+              <h3>HTML5</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>CSS3</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-left'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>ReactJs</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>firebase</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>Github</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>Data Structures And Algorithms</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>Computer Networks</h3>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <h3>Database Management System</h3>
             </div>
           </div>
           <div className='btn-wrapper about' data-aos='fade-up'>
-            <Link
-              to='portfolio'
+            <a href="https://drive.google.com/file/d/1L3BzuXnUCjBc8Q2d1TGOhAm-jl4IKKBf/view?usp=sharing">
+            <button
+            
               spy={true}
               smooth={true}
               duration={500}
               className='hire-me-btn'
             >
-              My portfolio
-            </Link>
-            <a href={resume} download className='download-cv-btn'>
-              Download CV{' '}
+              Resume
+            </button>
+            </a>
+            {/* <a href="" className='download-cv-btn'>
+              Resume
               <IconContext.Provider value={{ className: 'download-icon' }}>
                 <BiDownload />
               </IconContext.Provider>
-            </a>
+            </a> */}
+          </div>
+          <h3 className='languages-title' data-aos='fade-up'>
+            Competitive <span>Programming Profiles</span>
+          </h3>
+          <div className='about-work-details-wrapper'>
+          <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <a               href="https://www.codechef.com/users/asn7829">
+              <h3 >Codechef  (asn7829)</h3>
+              </a>
+            </div>
+          <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <a               href="https://codeforces.com/profile/Akshad0103">
+              <h3>Codeforces  (Akshad0103)</h3>
+              </a>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <a               href="https://leetcode.com/akshadsn03/">
+              <h3>Leetcode  (akshadsn03)</h3>
+              </a>
+            </div>
+            <div className='work-about-item-wrapper' data-aos='fade-up-right'>
+              <div className='check-icon'>
+                <IconContext.Provider value={{ className: 'check-list-icon' }}>
+                  <BsCheckCircle />
+                </IconContext.Provider>
+              </div>
+              <a               href="https://www.hackerrank.com/akshadsn03">
+              <h3>Hackerrank  (akshadsn03)</h3>
+              </a>
+            </div>
+      
+       
+         
           </div>
         </div>
+        
         <div className='right-about-page-area' data-aos='fade-up-left'>
           <div className='image-container'>
-            <img src={project} alt='project' className='project-about-img' />
+            <img src={photo} alt='project' className='project-about-img' />
+           
             <svg
               version='1.0'
               className='dots-svg about'

@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import About from "./components/About";
+import Experience from "./components/Experience";
+
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -21,9 +23,12 @@ const App = () => {
       <main className="App">
         <Header />
         <Home />
+        <About />
+     
+        <Experience/>
         <Work />
         <Portfolio />
-        <About />
+       
         <Contact />
         <Footer />
       </main>

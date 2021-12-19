@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ProjectCard from "./common/ProjectCard";
-import project1 from "../assets/images/projects/project11.png";
-import project2 from "../assets/images/projects/project4.png";
+import book from "../assets/images/book.png";
+import picture from "../assets/images/picture.png";
+import text from "../assets/images/text.png";
 import project3 from "../assets/images/projects/project7.png";
 import project4 from "../assets/images/projects/project6.png";
 import project6 from "../assets/images/projects/project12.png";
@@ -21,93 +22,56 @@ export default class Portfolio extends Component {
     const projects = [
       {
         id: 4,
-        image: project4,
-        title: "Microverse Chat",
+        image: book,
+        title: "ProjectBook ",
         description:
-          "This project provides a social media website created with Ruby on Rails. We tried to implement a UX based on Facebook",
-        demoLink: "https://tranquil-chamber-60677.herokuapp.com/",
-        sourceCodeLink: "https://github.com/barackm/ULK-Forum",
+          " Sign in and Sign up system using Email. Students will be able to get to know the projects made by other students.  Users can get guidance of projects from project developers.  Users can get to know the contest details",
+        
+       // demoLink: "https://tranquil-chamber-60677.herokuapp.com/",
+        sourceCodeLink: "https://github.com/Akshad7829/project",
         technologies: [
-          { id: 1, name: "Rails" },
-          { id: 2, name: "Stimulus" },
-          { id: 3, name: "SCSS" },
+          { id: 1, name: "HTML5" },
+          { id: 2, name: "CSS3" },
+          { id: 3, name: "ReactJs" },
+          { id: 4, name: "Firebase" },
         ],
         category_id: 1,
         animation: "zoom-in-up",
       },
       {
         id: 2,
-        image: project1,
-        title: "FMB Studio",
+        image: text,
+        title: "Text-Mate ",
         description:
-          "FMB studio is a website for photographs, Where they can post the best of their work.",
-        demoLink: "https://fmbstudio.netlify.app/",
-        sourceCodeLink: "https://github.com/barackm/fmb-studio",
+          "In this Website, you can write your text and edit it Some of the features of MS-Word are present.",
+        demoLink: "https://text-mate.netlify.app/",
+        sourceCodeLink: "https://github.com/Akshad7829/Text-Editor",
         technologies: [
-          { id: 1, name: "Javascript" },
-          { id: 2, name: "ReactJs" },
-          { id: 3, name: "SCSS" },
+          { id: 1, name: "HTML5" },
+          { id: 2, name: "CSS3" },
+          { id: 3, name: "ReactJs" },
+      
         ],
         category_id: 1,
         animation: "zoom-in-up",
       },
       {
         id: 5,
-        image: project7,
-        title: "My Doctor",
+        image: picture,
+        title: "Picture-Perfect ",
         description:
-          "My Doctor is a mobile app Designed for Hospitals, helping petients to be assisted by thier doctors online.",
-        demoLink: "https://github.com/barackm/Doctor-App",
-        sourceCodeLink: "https://github.com/barackm/Doctor-App",
-        technologies: [{ id: 1, name: "React Native" }],
+          "Reactjs Web Application to download High-quality HD Images for free. Simple and user-friendly UI",
+        demoLink: "https://picture-perfecct.netlify.app/",
+        sourceCodeLink: "https://github.com/Akshad7829/picture-perfect",
+        technologies: [{ id: 1, name: "HTML5 " },
+        { id:2 , name: "CSS3 " },
+        { id: 3, name: "ReactJs" },
+        
+      ],
         category_id: 2,
         animation: "fade-down-left",
       },
-      {
-        id: 6,
-        image: project6,
-        title: "Book Reviewer",
-        description:
-          "This project is a Ruby on Rails capstone project based on a redesign of Twitter. It is a place where people can share opinions or reviews about books with people who follow them. Reviews can be commented on and voted on so that other users may be confident about posted reviews.",
-        demoLink: "https://b-book-reviewer.herokuapp.com",
-        sourceCodeLink: "https://github.com/barackm/book-opinions",
-        technologies: [
-          { id: 1, name: "Rails" },
-          { id: 2, name: "Stimulus" },
-          { id: 3, name: "SCSS" },
-        ],
-        category_id: 3,
-        animation: "flip-left",
-      },
-      {
-        id: 1,
-        image: project2,
-        title: "ULK Forum",
-        description:
-          "Forum where students should post their problems about projects or assignments to get idea from other students",
-        demoLink: "https://ulk-forum.netlify.app/",
-        sourceCodeLink: "https://github.com/barackm/ULK-Forum",
-        technologies: [
-          { id: 1, name: "Javascript" },
-          { id: 2, name: "ReactJs" },
-          { id: 3, name: "SCSS" },
-        ],
-        category_id: 1,
-        animation: "zoom-in-up",
-      },
-
-      {
-        id: 3,
-        image: project3,
-        title: "Raven Bot ",
-        description:
-          "Raven Bot is a Ruby-based Bot used in restaurants, helping clients to place an order inside restaurents.          ",
-        demoLink: "https://github.com/barackm/Niky-Restaurent-Bot",
-        sourceCodeLink: "https://github.com/barackm/Niky-Restaurent-Bot",
-        technologies: [{ id: 1, name: "Ruby" }],
-        category_id: 3,
-        animation: "flip-left",
-      },
+      
     ];
 
     const webProjects = projects.filter((project) => project.category_id === 1);
@@ -135,12 +99,12 @@ export default class Portfolio extends Component {
           <div className="portfolio-header">
             <div className="home-hello-wrapper" data-aos="fade-up">
               <div className="hello-line"></div>
-              <h3 className="hero-hello">Portfolio</h3>
+              <h3 className="hero-hello">Projects</h3>
             </div>
             <div className="portfolio-works-wrapper">
               <div className="links-wrapper">
                 <h3 data-aos="fade-up">Some of my best works</h3>
-                <ul>
+                {/* <ul>
                   <li>
                     <div
                       onClick={() => this.handleHowTab("all")}
@@ -164,7 +128,7 @@ export default class Portfolio extends Component {
                       Backend
                     </div>
                   </li>
-                </ul>
+                </ul> */}
               </div>
               <div className="projects-grid-wrapper">
                 {renderProjects().map((project) => (

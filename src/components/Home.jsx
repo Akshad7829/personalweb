@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 
-import barack from '../assets/images/project2.png';
+import ho from '../assets/images/home.png';
 import resume from '../assets/Barack Mukelenga Resume.pdf';
 
 export default class Home extends Component {
@@ -23,18 +23,10 @@ export default class Home extends Component {
         {/* <div className="background-image"></div> */}
         <div className='aside-links-wrapper' data-aos='fade-up-left'>
           <ul>
-            <li>
-              <a href='https://www.facebook.com/freddy.fumba.7/' target='blank'>
-                <IconContext.Provider
-                  value={{ className: 'sidebar-link-icon' }}
-                >
-                  <FiFacebook />
-                </IconContext.Provider>
-              </a>
-            </li>
+         
             <li>
               <a
-                href='https://www.instagram.com/barackmukelenga/'
+               href="https://www.instagram.com/akshu_7829_/"
                 target='blank'
               >
                 <IconContext.Provider
@@ -45,7 +37,7 @@ export default class Home extends Component {
               </a>
             </li>
             <li>
-              <a href='https://github.com/barackm' target='blank'>
+              <a  href="https://github.com/Akshad7829" target='blank'>
                 <IconContext.Provider
                   value={{ className: 'sidebar-link-icon' }}
                 >
@@ -53,18 +45,10 @@ export default class Home extends Component {
                 </IconContext.Provider>
               </a>
             </li>
-            <li>
-              <a href='https://twitter.com/BarackMukelenga' target='blank'>
-                <IconContext.Provider
-                  value={{ className: 'sidebar-link-icon' }}
-                >
-                  <FiTwitter />
-                </IconContext.Provider>
-              </a>
-            </li>
+           
             <li>
               <a
-                href='https://www.linkedin.com/in/baraka-mukelenga/'
+                 href="https://www.linkedin.com/in/akshad-nayakwadi-43a049194/"
                 target='blank'
               >
                 <IconContext.Provider
@@ -83,34 +67,46 @@ export default class Home extends Component {
               <h3 className='hero-hello'>Hi there,</h3>
             </div>
             <div className='hero-text-wrapper' data-aos='fade-up-right'>
-              I am Baraka Mukelenga
+              I am Akshad Nayakwadi
             </div>
             <div className='profession-area'>
+            <h2 className='slogan' data-aos='fade-up'>
+            Iam,
+            {/* <br /> To help your next project */}
+          </h2>
+         
               <h3 className='hero-profession' data-aos='fade-up-right'>
-                Full-stack web developper
+                 Web-Developer , Coder , Student at GCE Karad
+              {/* <Typical
+        steps={['Web Developer', 1000, 'Coder', 500]}
+        loop={Infinity}
+        wrapper="h3"
+        className='hero-profession'
+        data-aos='fade-up-right'
+      /> */}
               </h3>
             </div>
             <div className='btn-wrapper' data-aos='fade-up'>
               <Link
-                to='contact'
+                to='about'
                 spy={true}
                 smooth={true}
                 duration={500}
                 className='hire-me-btn'
               >
-                Hire Me
+                Know More
               </Link>
-              <a href={resume} download className='download-cv-btn'>
-                Download CV{' '}
+              {/* <a href="" className='download-cv-btn'>
+                Resume{' '}
                 <IconContext.Provider value={{ className: 'download-icon' }}>
                   <BiDownload />
                 </IconContext.Provider>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className='image-content-wrapper' data-aos='zoom-in'>
             <div className='image-wrapper'>
-              <img src={barack} alt='' className='home-image' />
+              <img src={ho} alt='' className='home-image' />
 
               <svg
                 version='1.0'
@@ -575,7 +571,7 @@ export default class Home extends Component {
                     <FaLaptopCode />
                   </IconContext.Provider>
                 </div>
-                <div className='experiance-text'>
+                {/* <div className='experiance-text'>
                   <h5>Experience</h5>
                   <div className='years-wrapper'>
                     <h2>
@@ -585,7 +581,7 @@ export default class Home extends Component {
                     </h2>{' '}
                     <span>Strong</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -7,6 +7,7 @@ import {
   FiTwitter,
   FiGithub,
   FiLinkedin,
+  FiWhatsapp
 } from "react-icons/fi";
 import { Link } from "react-scroll";
 
@@ -17,7 +18,7 @@ export default class Footer extends Component {
         <div className="footer-content-container">
           <div className="footer-up">
             <ul className="links-pages">
-              <li data-aos="fade-right">
+              {/* <li data-aos="fade-right">
                 <Link to="home" spy={true} smooth={true} duration={500}>
                   Home
                 </Link>
@@ -41,26 +42,15 @@ export default class Footer extends Component {
                 <Link to="contact" spy={true} smooth={true} duration={500}>
                   Contact me
                 </Link>
-              </li>
+              </li> */}
             </ul>
 
             <div className="contact-links-wrapper">
               <ul>
+              
                 <li>
                   <a
-                    href="https://www.facebook.com/freddy.fumba.7/"
-                    target="blank"
-                  >
-                    <IconContext.Provider
-                      value={{ className: "contact-link-icon" }}
-                    >
-                      <FiFacebook />
-                    </IconContext.Provider>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/barackmukelenga/"
+                    href="https://www.instagram.com/akshu_7829_/"
                     target="blank"
                   >
                     <IconContext.Provider
@@ -70,8 +60,9 @@ export default class Footer extends Component {
                     </IconContext.Provider>
                   </a>
                 </li>
+               
                 <li>
-                  <a href="https://github.com/barackm" target="blank">
+                  <a href="https://github.com/Akshad7829" target="blank">
                     <IconContext.Provider
                       value={{ className: "contact-link-icon" }}
                     >
@@ -79,18 +70,10 @@ export default class Footer extends Component {
                     </IconContext.Provider>
                   </a>
                 </li>
-                <li>
-                  <a href="https://twitter.com/BarackMukelenga" target="blank">
-                    <IconContext.Provider
-                      value={{ className: "contact-link-icon" }}
-                    >
-                      <FiTwitter />
-                    </IconContext.Provider>
-                  </a>
-                </li>
+               
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/baraka-mukelenga/"
+                    href="https://www.linkedin.com/in/akshad-nayakwadi-43a049194/"
                     target="blank"
                   >
                     <IconContext.Provider
@@ -105,14 +88,11 @@ export default class Footer extends Component {
           </div>
           <div className="footer-down">
             <p>
-              &copy; {new Date().getFullYear()}{" "}
-              <a
-                href="https://www.linkedin.com/in/baraka-mukelenga/"
-                className="name"
-              >
-                Baraka Mukelenga
-              </a>
-              , All right reserved
+            
+             
+               Made With ❤️
+              
+              By Akshad
             </p>
           </div>
         </div>

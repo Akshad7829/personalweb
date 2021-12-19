@@ -16,7 +16,7 @@ export default class ProjectCard extends Component {
         >
           <h3 className="project-title">{project.title}</h3>
           <p className="project-details">
-            {truncateStr(project.description, 100)}
+            {truncateStr(project.description, 500)}
           </p>
           <div className="project-links">
             <a href={project.demoLink} target="blank">
